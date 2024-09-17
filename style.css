@@ -1,0 +1,51 @@
+.col-sm-12{
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+    border-radius: 50px;
+    
+      
+
+}
+
+.col-sm-12:hover{
+    box-shadow: 1px 1px 5px 5px rgb(219, 219, 200);
+    transition: box-shadow 0.5s ease;   
+}
+    
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.animated-name {
+    font-size: 4rem;
+    color: #61dafb;
+    animation: bounceFade 3s infinite;
+}
+
+@keyframes bounceFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
